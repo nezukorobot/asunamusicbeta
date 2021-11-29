@@ -2,7 +2,7 @@
     "name": "YuiMusicNew",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music"],
-    "repository": "https://github.com/aryazakaria01/YuiMusicNew",
+    "repository": "https://github.com/nezukorobot/asunamusicbeta",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
