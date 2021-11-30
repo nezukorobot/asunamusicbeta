@@ -7,6 +7,7 @@ git+https://github.com/pyrogram/pyrogram@master
 py-tgcalls==0.8.1rc1
 pytube
 wget
+node (15.0.0+)
 python-dotenv
 search-engine-parser
 tgcrypto
