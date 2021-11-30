@@ -18,10 +18,6 @@ def play_markup(videoid, user_id):
                 InlineKeyboardButton(text="🔎 ɢᴇᴛ ʟʏʀɪᴄꜱ", callback_data=f'lyrics {videoid}|{user_id}'),
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data=f'other {videoid}|{user_id}'),
             ],
-            [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-            ],
             [      
                 InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')
             ],
@@ -32,7 +28,7 @@ def play_markup(videoid, user_id):
 def others_markup(videoid, user_id):
     buttons= [
             [
-                InlineKeyboardButton(text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
+                InlineKeyboardButton(text="Channel", url=f"https://t.me/Asunasupportchat"),
                 InlineKeyboardButton(text="➕ Group Playlist", callback_data=f'group_playlist {videoid}|{user_id}')
             ],
             [
@@ -67,10 +63,6 @@ play_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Zaid_Updates"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/zaid_Updates"),
-                ],
-                [
                     InlineKeyboardButton(
                         "🗑", callback_data="close"
                     )
@@ -87,10 +79,6 @@ def audio_markup(videoid, user_id):
                 InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-            ],
-            [
                 InlineKeyboardButton(text="🗑 Close", callback_data="close2")              
             ],
         ]
@@ -102,10 +90,6 @@ def single_markup(ID, duration, user_id, query):
             [
                 InlineKeyboardButton(text="▶️ Start Playing", callback_data=f'Music {ID}|{duration}|{user_id}'),
                 InlineKeyboardButton(text="🔎 Search More", callback_data=f'popat 1|{query}|{user_id}')
-            ],
-            [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
             ],
             [
                 InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f"ppcl2 smex|{user_id}")
@@ -156,10 +140,6 @@ def personal_markup(link):
             [
                 InlineKeyboardButton(text="Watch on Youtube", url=f'{link}')
             ],
-            [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-            ],
             [ 
                 InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')
             ],
@@ -172,10 +152,6 @@ start_keyboard = InlineKeyboardMarkup(
                     InlineKeyboardButton(
                         "📜 Commands", url="https://telegra.ph/Music-Bot-10-10"
                     )
-                ],
-                [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -195,10 +171,6 @@ confirm_keyboard = InlineKeyboardMarkup(
                         "No", callback_data="close2"
                     )
                 ],
-                [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-                ],    
             ]
         )
 
@@ -211,11 +183,7 @@ confirm_group_keyboard = InlineKeyboardMarkup(
                     InlineKeyboardButton(
                         "No", callback_data="close2"
                     )
-                ],
-                [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-                ],    
+                ],  
             ]
         )
 
@@ -240,10 +208,6 @@ play_list_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
-                ],
-                [
                     InlineKeyboardButton(
                         "🗑 ᴄʟᴏsᴇ", callback_data="close2"
                     )
@@ -256,10 +220,6 @@ def playlist_markup(user_name, user_id):
             [
                 InlineKeyboardButton(text=f"Group's Playlist", callback_data=f'play_playlist {user_id}|group'),
                 InlineKeyboardButton(text=f"{user_name[:8]}'s Playlist", callback_data=f'play_playlist {user_id}|personal'),
-            ],
-            [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Superior_Support"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Superior_bots"),
             ],
             [
                 InlineKeyboardButton(text="🗑 Close", callback_data="close2")              
