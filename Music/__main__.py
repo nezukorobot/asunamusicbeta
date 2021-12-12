@@ -51,9 +51,9 @@ async def load_start():
         except Exception as e:
             print("Error came while clearing db")
             pass     
-    await app.send_message(LOG_GROUP_ID, "Yui Music Bot Started")
-    await client.send_message(LOG_GROUP_ID, "Assistant Of Yui Music Started")
-    print("[INFO]: STARTED THE YUKKI BOT AND SENDING THE INFO TO YUKKI SERVER")
+    await app.send_message(LOG_GROUP_ID, "Asuna Music Bot Started")
+    await client.send_message(LOG_GROUP_ID, "Assistant Of Asuna Music Started")
+    print("[INFO]: STARTED THE ASUNA BOT AND SENDING THE INFO TO Asuna SERVER")
     
    
 loop = asyncio.get_event_loop()
